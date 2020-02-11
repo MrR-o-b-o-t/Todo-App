@@ -1,23 +1,32 @@
 #header {
 	display: flex;
 	justify-content: center;
-	margin-right: 160px;
-}
-
-#list-item {
-	display: inline-flex;
-	flex-direction: column;
+	margin-right: 50px;
 }
 
 ul {
-	display: inline-flex;
+	display: flex;
+	flex-direction: column;
 	list-style: none;
+	margin-top: 30px;
 }
 
 .main {
-	width: 400px;
+	width: 300px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	margin: auto;
+}
+
+#display > li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 2em;
+}
+
+.strike-text {
+	text-decoration: line-through;
+	color: red;
 }
