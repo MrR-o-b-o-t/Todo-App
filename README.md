@@ -2,7 +2,7 @@
 
 <br>
 
-_This todo list app was created with vanilla JavaScript, HTML5, and CSS3. 
+_This todo list app was created with vanilla JavaScript, HTML5, and CSS3._
 <br>
 See it [here])
 <br>
