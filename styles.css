@@ -1,14 +1,20 @@
 #header {
 	display: flex;
 	justify-content: center;
-	margin-right: 50px;
+	margin-bottom: 50px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
 }
 
-ul {
+h4 {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 	margin-top: 30px;
+}
+
+.todo-container {
+	margin-top: 50px;
 }
 
 .main {
@@ -19,11 +25,18 @@ ul {
 	margin: auto;
 }
 
+#display {
+	display: flex;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+}
+
 #display > li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-bottom: 2em;
+	padding-top: 30px;
 }
 
 .strike-text {

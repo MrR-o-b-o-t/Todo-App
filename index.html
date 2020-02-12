@@ -7,24 +7,42 @@
 		<title>To-Do App</title>
 
 		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 	</head>
 
 	<body>
 		<h1 id="header">TO DO LIST</h1>
 		<div class="main">
-			<div class="container">
-				<div>
-					<input type="text" id="todo-input" />
+			<form class="container" class="needs-validation" novalidate>
+				<div class="input-group-prepend">
+					<input
+						type="text"
+						id="todo-input"
+						class="form-control input-group shadow-lg"
+						aria-describedby="button-addon2"
+						required
+					/>
 					<input
 						type="button"
 						value="Add ToDo"
 						id="todo-button"
+						id="button-addon2"
+						class="btn btn-info btn-sm"
 						onclick="addTodo(); ClearInputOnSubmit()"
 					/>
 				</div>
-			</div>
+			</form>
 			<div class="todo-container">
-				<ul id="display"></ul>
+				<h4 id="display" class="list-group">TODOS</h4>
 			</div>
 		</div>
 		<script src="scripts.js"></script>
