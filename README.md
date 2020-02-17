@@ -4,7 +4,7 @@
 
 _This todo list app was created with vanilla JavaScript, HTML5, and CSS3._
 <br>
-See it [here])
+See it here: https://web-dev-jr.github.io/Todo-App/
 <br>
 <br>
 <image src="images/Capture-todo.PNG">
