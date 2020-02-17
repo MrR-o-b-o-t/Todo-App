@@ -21,10 +21,9 @@ const addTodo = () => {
 	let deleteButtonX = document.createTextNode('X');
 
 	textnode.innerText = text;
-	// Create delete todo button
 	deleteButton.appendChild(deleteButtonX);
 	deleteButton.addEventListener('click', removeNode);
-	// Create strike through radio input
+
 	StrikeThroughRadio.addEventListener('click', e => {
 		StrikeThroughRadio.checked
 			? e.target.nextElementSibling.classList.add('strike-text')
@@ -54,16 +53,8 @@ function ClearInputOnSubmit() {
 	document.getElementById('todo-input').value = '';
 }
 
-// get saved todos from local storage and save it in a variable
-// if saved todos variable is null then re-assign saved todoso variable equal to an empty array
-// add current todo text to the saved todos array variable
-// re-save saved todos into local storage (using the setItem() method)
-
-//When the page refreshes or loads
-
-// 1. Get saves todo items from local storage
 const savedTodos = JSON.parse(localStorage.getItem('todos') || '[]');
-// 2. loop through saved todo items and render each
+
 for (let i = 0; i < savedTodos.length; i++) {
 	const todoText = savedTodos[i];
 
